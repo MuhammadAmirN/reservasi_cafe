@@ -1,0 +1,178 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/home.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #f4f4f4;
+}
+
+/* Header and Navigation */
+header {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+header:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff7f50;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+    transform: scale(1.05);
+}
+
+/* Reservations Section */
+.reservations-container {
+    padding: 100px 50px;
+    margin-top: 80px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+.reservations-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff7f50;
+}
+
+.confirmation {
+    background: rgba(255, 127, 80, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    color: #fff;
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styling */
+form {
+    background: rgba(255, 127, 80, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 400px;
+    color: #f4f4f4;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #e56739;
+}
+
+/* Selected Menus List */
+ul#selected_menus {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul#selected_menus li {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul#selected_menus li button {
+    background: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+ul#selected_menus li button:hover {
+    background: #e56739;
+}

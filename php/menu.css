@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8B4513; /* Warna background coklat */
+    
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8); /* Warna hitam transparan seperti di About */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%; /* Lebar penuh untuk navbar */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Lebar penuh untuk menu */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.menu-container {
+    padding: 50px;
+    text-align: center;
+    background-color: #462b08; /* Warna background serasi */
+    margin-top: 60px;
+}
+
+.menu-category {
+    margin-bottom: 40px; /* Spacing between categories */
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row; /* Mengatur tampilan menjadi menyamping */
+    flex-wrap: wrap; /* Membungkus baris jika terlalu panjang */
+    justify-content: center;
+}
+
+.menu-item {
+    background: #9c7804;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 200px; /* Mengatur lebar item */
+    overflow: hidden;
+    text-align: left;
+}
+
+.menu-item img {
+    width: 100%;  /* Lebar gambar sesuai lebar box */
+    height: 120px; /* Tinggi gambar disesuaikan */
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.menu-item p {
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+
+.order-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-selection, .order-form {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.order-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+.order-item {
+    min-width: 200px;
+    background-color: #9c7804;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.order-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.order-item p {
+    margin: 5px 0;
+}
+
+.order-item button {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-item button:hover {
+    background-color: #ff3333;
+}
+
+.order-form label, .order-form input, .order-form select, .order-form p, .order-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.order-form input, .order-form select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #45a049;
+}

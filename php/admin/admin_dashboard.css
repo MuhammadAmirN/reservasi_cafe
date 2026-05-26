@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../../images/admin products.png') no-repeat center center/cover;
+    height: 100vh;
+    color: #070707;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    padding: 10px 0;
+    text-align: right;
+    width: 90%;
+ 
+}
+
+nav {
+    position: absolute; /* Menggunakan posisi absolute agar navigasi mudah dipindah */
+    left: 75%; /* Pindahkan navigasi ke tengah halaman secara horizontal */
+    bottom: 150px; /* Posisi di bawah halaman */
+    transform: translateX(-50%); /* Translate untuk benar-benar berada di tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background: rgba(8, 8, 8, 0.7);
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(48, 48, 48, 0.3);
+    color : black;
+}
+
+.content {
+    flex: 1;
+    padding: 5px;
+    text-align: right;
+}
