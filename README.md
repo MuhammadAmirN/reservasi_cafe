@@ -1,55 +1,70 @@
-# ☕ Daams Cafe Reservation System
+# ☕ Sistem Reservasi Cafe
 
-Sistem Reservasi Cafe berbasis PHP dan MySQL yang memungkinkan pelanggan melakukan registrasi akun, reservasi meja, pemesanan menu, serta memberikan kemudahan bagi admin dalam mengelola data pengguna, reservasi, produk, dan laporan harian.
+Sistem Reservasi Cafe adalah aplikasi web berbasis PHP dan MySQL yang dirancang untuk membantu pengelolaan reservasi meja, pemesanan produk, serta administrasi operasional cafe secara digital.
 
-## 📌 Deskripsi Proyek
-
-Daams Cafe Reservation System dikembangkan untuk membantu digitalisasi proses reservasi dan pemesanan pada cafe. Sistem ini menyediakan fitur bagi pelanggan untuk melakukan reservasi secara online serta memudahkan admin dalam mengelola operasional cafe melalui dashboard khusus.
-
-Proyek ini dibuat menggunakan:
-
-- PHP Native
-- MySQL Database
-- HTML5
-- CSS3
-- XAMPP (Apache & MySQL)
+Proyek ini dikembangkan sebagai bagian dari portofolio akademik untuk mengimplementasikan konsep pengembangan aplikasi web, manajemen database, autentikasi pengguna, dan pengelolaan data menggunakan PHP Native dan MySQL.
 
 ---
 
-## ✨ Fitur Utama
+## 📋 Fitur Utama
 
-### 👤 Pelanggan
+### Pengguna
 - Registrasi akun
-- Login & Logout
+- Login dan Logout
 - Melihat informasi cafe
-- Melihat daftar menu
+- Melihat daftar menu dan produk
 - Melakukan reservasi meja
 - Melakukan pemesanan produk
 - Konfirmasi pemesanan
 
-### 🔑 Admin
+### Admin
 - Dashboard Admin
-- Kelola Data Pengguna
-- Kelola Data Menu
-- Kelola Data Produk
-- Kelola Reservasi
-- Kelola Pemesanan
-- Kelola Meja
+- Manajemen Pengguna (CRUD)
+- Manajemen Produk (CRUD)
+- Manajemen Menu
+- Manajemen Reservasi
+- Manajemen Pemesanan
+- Manajemen Meja
 - Laporan Harian
 
 ---
 
-## 📂 Struktur Project
+## 🛠️ Teknologi yang Digunakan
+
+- PHP Native
+- MySQL
+- HTML5
+- CSS3
+- JavaScript
+- XAMPP
+
+---
+
+## 💡 Kompetensi yang Diimplementasikan
+
+Melalui proyek ini saya mempelajari dan menerapkan:
+
+- Sistem autentikasi pengguna
+- Session management
+- Operasi CRUD (Create, Read, Update, Delete)
+- Relational Database Management
+- Pengelolaan data menggunakan MySQL
+- Pengembangan dashboard admin
+- Integrasi frontend dan backend
+- Pengembangan aplikasi web berbasis PHP
+
+---
+
+## 📂 Struktur Proyek
 
 ```text
 reservasi_cafe/
 │
 ├── index.php
-├── style.css
 ├── reservasi_cafe.sql
+├── style.css
 │
 ├── images/
-│   └── Asset gambar website
 │
 └── php/
     ├── Login.php
@@ -67,7 +82,7 @@ reservasi_cafe/
         ├── admin_dashboard.php
         ├── kelola_pengguna.php
         ├── kelola_menu.php
-        ├── kelola_products.php
+        ├── kelola_produk.php
         ├── kelola_meja.php
         ├── kelola_reservasi.php
         ├── kelola_pemesanan.php
@@ -76,41 +91,12 @@ reservasi_cafe/
 
 ---
 
-## 🗄️ Database
-
-Nama Database:
-
-```sql
-reservasi_cafe
-```
-
-Import file:
-
-```text
-reservasi_cafe.sql
-```
-
-Konfigurasi database dapat diubah pada file:
-
-```php
-php/config.php
-```
-
-```php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "reservasi_cafe";
-```
-
----
-
-## 🚀 Cara Menjalankan Project
+## ⚙️ Cara Menjalankan Proyek
 
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/reservasi-cafe.git
+git clone https://github.com/username/nama-repository.git
 ```
 
 ### 2. Pindahkan ke Folder XAMPP
@@ -121,27 +107,42 @@ xampp/htdocs/reservasi_cafe
 
 ### 3. Jalankan Apache dan MySQL
 
-Buka XAMPP Control Panel lalu aktifkan:
+Aktifkan Apache dan MySQL melalui XAMPP Control Panel.
 
-- Apache
-- MySQL
+### 4. Buat Database
 
-### 4. Import Database
-
-1. Buka phpMyAdmin
-2. Buat database baru:
+Buka phpMyAdmin kemudian buat database:
 
 ```sql
 reservasi_cafe
 ```
 
-3. Import file:
+### 5. Import Database
+
+Import file:
 
 ```text
 reservasi_cafe.sql
 ```
 
-### 5. Jalankan Website
+### 6. Konfigurasi Koneksi Database
+
+Sesuaikan file:
+
+```php
+php/config.php
+```
+
+Contoh:
+
+```php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "reservasi_cafe";
+```
+
+### 7. Jalankan Aplikasi
 
 Buka browser:
 
@@ -151,58 +152,30 @@ http://localhost/reservasi_cafe
 
 ---
 
-## 📸 Tampilan Sistem
-
-### Halaman Utama
-- Home
-- About
-- Products
-- Contact
-- Reservations
-
-### Dashboard Admin
-- Kelola Pengguna
-- Kelola Produk
-- Kelola Menu
-- Kelola Reservasi
-- Kelola Pemesanan
-- Kelola Meja
-- Laporan Harian
-
----
-
 ## 🎯 Tujuan Pengembangan
 
-Proyek ini dibuat sebagai implementasi sistem informasi berbasis web untuk membantu proses:
+Tujuan dari proyek ini adalah untuk memahami dan mengimplementasikan:
 
-- Reservasi tempat secara online
-- Pemesanan menu cafe
-- Manajemen data pelanggan
-- Pengelolaan operasional cafe
-- Penyusunan laporan transaksi
-
----
-
-## 👨‍💻 Teknologi yang Digunakan
-
-- PHP Native
-- MySQL
-- HTML
-- CSS
-- JavaScript
-- XAMPP
+- Pengembangan aplikasi web berbasis PHP Native
+- Perancangan dan implementasi database MySQL
+- Pengelolaan data pelanggan dan reservasi
+- Penerapan sistem autentikasi pengguna
+- Pengembangan dashboard administrasi
 
 ---
 
-## 📄 Lisensi
+## 📚 Status Proyek
 
-Project ini dibuat untuk kebutuhan pembelajaran, pengembangan portofolio, dan kegiatan magang.
+✅ Selesai
+
+Proyek ini digunakan sebagai portofolio pembelajaran dan dokumentasi kemampuan pengembangan aplikasi web menggunakan PHP dan MySQL.
 
 ---
 
-### Author
+## 👨‍💻 Pengembang
 
 **Muh Amir**
 
-Mahasiswa Informatika  
-Web Developer | Backend Developer | Database Enthusiast
+Mahasiswa Informatika
+
+Portfolio Project – Web Development & Database Management
